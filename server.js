@@ -39,8 +39,8 @@ app.use('/', function (request, response) {
     response.redirect('/tasks')
 });
 
-
-app.listen(9000, () => {
+port = process.env.PORT || 80
+app.listen(port, () => {
     console.log('server started');
 });
 
